@@ -36,22 +36,23 @@
 //
 // border-radius
 // 
-// @param top-left-radius		:	px, em, %;
-// @param top-right-radius		:	px, em, %;
-// @param bottom-right-radius	:	px, em, %;
-// @param bottom-left-radius	:	px, em, %;
+// @param top-left-radius     :  px, em, %;
+// @param top-right-radius    :  px, em, %;
+// @param bottom-right-radius :  px, em, %;
+// @param bottom-left-radius  :  px, em, %;
 //
 // @see http://www.w3.org/TR/css3-background/#border-radius
 //
 //============================================================
 
 .border-radius() {
-	  -webkit-border-radius: @arguments;
-	     -moz-border-radius: @arguments;
-	          border-radius: @arguments;
-	-webkit-background-clip: padding-box;
-	   -moz-background-clip: padding;
-	        background-clip: padding-box;
+       -webkit-border-radius  :  @arguments;
+          -moz-border-radius  :  @arguments;
+               border-radius  :  @arguments;
+
+     -webkit-background-clip  :  padding-box;
+        -moz-background-clip  :  padding;
+             background-clip  :  padding-box;
 }
 
 
@@ -60,21 +61,21 @@
 // 
 // box-shadow
 //
-// @param colour				:	#000, rgba, hsla;
-// @param horizontal-offset		:	px, em;
-// @param vertical-offset		:	px, em;
-// @param blur-radius			:	px, em;
-// @param spread-distance		:	px, em,
-// @param inset					:	inset; 
+// @param colour              :  #000, rgba, hsla;
+// @param horizontal-offset   :  px, em;
+// @param vertical-offset     :  px, em;
+// @param blur-radius         :  px, em;
+// @param spread-distance     :  px, em,
+// @param inset               :  inset; 
 //
 // @see http://www.w3.org/TR/css3-background/#box-shadow
 //
 //============================================================
 
 .box-shadow() {
-	-webkit-box-shadow: @arguments;
-	   -moz-box-shadow: @arguments;
-	        box-shadow: @arguments;
+          -webkit-box-shadow  :  @arguments;
+             -moz-box-shadow  :  @arguments;
+                  box-shadow  :  @arguments;
 }
 
 
@@ -83,17 +84,17 @@
 // 
 // text-shadow
 //
-// @param colour				:	#000, rgba, hsla;
-// @param horizontal-offset		:	px, em;
-// @param vertical-offset		:	px, em;
-// @param blur-radius			:	px, em;
+// @param colour              :  #000, rgba, hsla;
+// @param horizontal-offset   :  px, em;
+// @param vertical-offset     :  px, em;
+// @param blur-radius         :  px, em;
 //
 // @see http://www.w3.org/TR/css3-text/#text-shadow
 //
 //============================================================
 
 .text-shadow() {
-	text-shadow: @arguments; 
+                 text-shadow  :  @arguments; 
 }
 
 
@@ -105,11 +106,11 @@
 //============================================================
 
 .linear-gradient() {}
-	background-image: -webkit-linear-gradient(@arguments); 
-	background-image:    -moz-linear-gradient(@arguments); 
-	background-image:     -ms-linear-gradient(@arguments); 
-	background-image:      -o-linear-gradient(@arguments); 
-	background-image:         linear-gradient(@arguments);
+            background-image  : -webkit-linear-gradient(@arguments); 
+            background-image  :    -moz-linear-gradient(@arguments); 
+            background-image  :     -ms-linear-gradient(@arguments); 
+            background-image  :      -o-linear-gradient(@arguments); 
+            background-image  :         linear-gradient(@arguments);
 }
 
 
@@ -118,7 +119,7 @@
 // 
 // rotate
 //
-// @param angle					:	90deg; 
+// @param angle               :  90deg; 
 //
 // @see http://www.w3.org/TR/css3-2d-transforms/
 // @see http://www.w3.org/TR/css3-2d-transforms/#transform-functions
@@ -162,8 +163,9 @@
 // 
 // easing
 //
-// Thanks to both Robert Penner and Matthew Lein 
-// for their sterling work on easing. Respect.
+// Thanks to Robert Penner for his sterling work on easing,
+// and to Matthew Lein for converting these functions into
+// cubic-bezier functions. Respect.
 //
 // @see http://robertpenner.com/
 // @see http://matthewlein.com/ceaser/
