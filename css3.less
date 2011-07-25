@@ -7,6 +7,7 @@
 //
 // @author Matthew Wagerfield
 // @see http://matthew.wagerfield.com
+// @see http://twitter.com/#!/mwagerfield
 //
 // ---------- INDEX ----------
 //
@@ -16,11 +17,13 @@
 // @mixin text-shadow
 //
 // Transformation:
+// @mixin transform
 // @mixin matrix
 // @mixin translate
 // @mixin scale
 // @mixin rotate
 // @mixin skew
+// @mixin backface-visibility
 //
 // Animation:
 // @mixin transition
@@ -99,6 +102,30 @@
 
 //============================================================
 // 
+// transform
+//
+// @param functions           :  matrix()
+//                            :  translate()
+//                            :  scale()
+//                            :  rotate()
+//                            :  skew()
+//
+// @see http://www.w3.org/TR/css3-2d-transforms/
+//
+//============================================================
+
+.transform() {
+    -webkit-transform: @arguments;
+       -moz-transform: @arguments;
+        -ms-transform: @arguments;
+         -o-transform: @arguments;
+            transform: @arguments;
+}
+
+
+
+//============================================================
+// 
 // matrix
 //
 // @param a                   :  Number;
@@ -154,7 +181,7 @@
 //
 //============================================================
 
-.scale() {
+.scale(@value: 2.0) {
     -webkit-transform: scale(@arguments);
        -moz-transform: scale(@arguments);
         -ms-transform: scale(@arguments);
@@ -201,6 +228,26 @@
         -ms-transform: skew(@arguments);
          -o-transform: skew(@arguments);
             transform: skew(@arguments);
+}
+
+
+
+//============================================================
+// 
+// backface-visibility
+//
+// @param visibility          :  visible | hidden;
+//
+// @see http://www.w3.org/TR/css3-3d-transforms/
+//
+//============================================================
+
+.backface-visibility() {
+    -webkit-backface-visibility: @arguments;
+       -moz-backface-visibility: @arguments;
+        -ms-backface-visibility: @arguments;
+         -o-backface-visibility: @arguments;
+            backface-visibility: @arguments;
 }
 
 
