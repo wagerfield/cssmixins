@@ -11,10 +11,15 @@
 //
 // ---------- INDEX ----------
 //
+// Display:
+// @mixin box-sizing
+//
 // Decoration:
 // @mixin border-radius
 // @mixin box-shadow
 // @mixin text-shadow
+// @mixin linear-gradient
+// @mixin radial-gradient
 //
 // Transformation:
 // @mixin transform
@@ -30,6 +35,29 @@
 // @mixin easing
 //
 //============================================================
+
+
+
+//============================================================
+//
+// box-sizing
+//
+// @param value               :  content-box ||
+//                               padding-box ||
+//                               border-box  || 
+//                               inherit
+//
+// @see http://www.w3.org/TR/css3-ui/#box-sizing
+//
+//============================================================
+
+.box-sizing() {
+    -webkit-box-sizing: @arguments;
+       -moz-box-sizing: @arguments;
+        -ms-box-sizing: @arguments;
+         -o-box-sizing: @arguments;
+            box-sizing: @arguments;
+}
 
 
 
@@ -96,6 +124,53 @@
 
 .text-shadow() {
     text-shadow: @arguments;
+}
+
+
+
+//============================================================
+//
+// linear-gradient
+//
+// @param angle               :  top, left, 90deg;
+// @param colourA             :  #000 0%, red 0%;
+// @param colourB             :  #000 50%, red 50%;
+// @param colourC             :  #000 100%, red 100%;
+//
+// @see http://dev.w3.org/csswg/css3-images/#linear-gradients
+//
+//============================================================
+
+.linear-gradient() {
+    background-image: -webkit-linear-gradient(@arguments);
+    background-image: -moz-linear-gradient(@arguments);
+    background-image: -ms-linear-gradient(@arguments);
+    background-image: -o-linear-gradient(@arguments);
+    background-image: linear-gradient(@arguments);
+}
+
+
+
+//============================================================
+//
+// radial-gradient
+//
+// @param location            :  left top, 50% 50%;
+// @param shape               :  circle, ellipse, 100% 75%;
+// @param colourA             :  #000 0%, red 0%;
+// @param colourB             :  #000 50%, red 50%;
+// @param colourC             :  #000 100%, red 100%;
+//
+// @see http://dev.w3.org/csswg/css3-images/#radial-gradients
+//
+//============================================================
+
+.radial-gradient() {
+    background-image: -webkit-radial-gradient(@arguments);
+    background-image: -moz-radial-gradient(@arguments);
+    background-image: -ms-radial-gradient(@arguments);
+    background-image: -o-radial-gradient(@arguments);
+    background-image: radial-gradient(@arguments);
 }
 
 
