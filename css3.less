@@ -12,6 +12,11 @@
 // ---------- INDEX ----------
 //
 // Display:
+// @mixin display-box
+// @mixin box-orient
+// @mixin box-pack
+// @mixin box-align
+// @mixin box-flex
 // @mixin box-sizing
 // 
 // Decoration:
@@ -39,6 +44,122 @@
 // @mixin easing
 //
 //============================================================
+
+
+
+//============================================================
+//
+// display-box
+//
+// @see http://www.w3.org/TR/css3-flexbox/
+// @see http://www.html5rocks.com/en/tutorials/flexbox/quick/
+//
+//============================================================
+
+.display-box() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+}
+
+
+
+//============================================================
+//
+// box-orient
+//
+// @param value               :  horizontal |
+//                               vertical   |
+//                               inherit
+//
+// @see http://www.w3.org/TR/css3-flexbox/
+// @see http://www.html5rocks.com/en/tutorials/flexbox/quick/
+//
+//============================================================
+
+.box-orient() {
+    .display-box();
+    -webkit-box-orient: @arguments;
+       -moz-box-orient: @arguments;
+        -ms-box-orient: @arguments;
+         -o-box-orient: @arguments;
+            box-orient: @arguments;
+}
+
+
+
+//============================================================
+//
+// box-pack
+//
+// @param value               :  start   |
+//                               end     |
+//                               center  |
+//                               justify
+//
+// @see http://www.w3.org/TR/css3-flexbox/
+// @see http://www.html5rocks.com/en/tutorials/flexbox/quick/
+//
+//============================================================
+
+.box-pack() {
+    .display-box();
+    -webkit-box-pack: @arguments;
+       -moz-box-pack: @arguments;
+        -ms-box-pack: @arguments;
+         -o-box-pack: @arguments;
+            box-pack: @arguments;
+}
+
+
+
+//============================================================
+//
+// box-align
+//
+// @param value               :  start    |
+//                               end      |
+//                               center   |
+//                               baseline |
+//                               stretch
+//
+// @see http://www.w3.org/TR/css3-flexbox/
+// @see http://www.html5rocks.com/en/tutorials/flexbox/quick/
+//
+//============================================================
+
+.box-align() {
+    .display-box();
+    -webkit-box-align: @arguments;
+       -moz-box-align: @arguments;
+        -ms-box-align: @arguments;
+         -o-box-align: @arguments;
+            box-align: @arguments;
+}
+
+
+
+//============================================================
+//
+// box-flex
+//
+// @param value               :  0 | Integer
+//
+// @see http://www.w3.org/TR/css3-flexbox/
+// @see http://www.html5rocks.com/en/tutorials/flexbox/quick/
+//
+//============================================================
+
+.box-flex() {
+    .display-box();
+    -webkit-box-flex: @arguments;
+       -moz-box-flex: @arguments;
+        -ms-box-flex: @arguments;
+         -o-box-flex: @arguments;
+            box-flex: @arguments;
+}
 
 
 
