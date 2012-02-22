@@ -18,6 +18,7 @@
 // @mixin box-align
 // @mixin box-flex
 // @mixin box-sizing
+// @mixin user-select
 // 
 // Decoration:
 // @mixin border-radius
@@ -182,6 +183,33 @@
         -ms-box-sizing: @arguments;
          -o-box-sizing: @arguments;
             box-sizing: @arguments;
+}
+
+
+
+//============================================================
+//
+// user-select
+//
+// @param value               :  none     ||    
+//                               text     ||     
+//                               toggle   ||  
+//                               element  || 
+//                               elements ||
+//                               all      ||     
+//                               inherit
+//
+// @see http://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select
+//
+//============================================================
+
+.user-select() {
+    -webkit-touch-callout: @arguments;
+      -webkit-user-select: @arguments;
+         -moz-user-select: @arguments;
+          -ms-user-select: @arguments;
+           -o-user-select: @arguments;
+              user-select: @arguments;
 }
 
 
