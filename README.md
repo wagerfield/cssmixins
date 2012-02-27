@@ -1,6 +1,6 @@
 #LESS CSS3 Mixins
 
-###Display
+##Display
 
 * display-box
 * box-orient
@@ -10,7 +10,7 @@
 * box-sizing
 * user-select
 
-###Decoration
+##Decoration
 
 * border-radius
 * box-shadow
@@ -18,7 +18,7 @@
 * linear-gradient
 * radial-gradient
 
-###Transformation
+##Transformation
 
 * transform
 * transform-origin
@@ -32,7 +32,7 @@
 * rotate
 * skew
 
-###Animation
+##Animation
 
 * transition
 * easing
