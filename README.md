@@ -51,4 +51,4 @@ Darcy Clarke: [Follow on Twitter](https://twitter.com/#!/darcy_clarke)
 
 ##License
 
-Licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Enjoy ☺
+Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Enjoy ☺
