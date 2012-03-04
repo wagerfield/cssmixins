@@ -6,6 +6,12 @@ All mixins come with sweet documentation including available values & units, W3 
 
 PLUS! [Robert Penner's](http://robertpenner.com/) easing equations as cubic-bezier functions, all thanks to the work of [Matthew Lein](http://matthewlein.com/ceaser/). Now you have no excuse not to spice up your CSS3 transitions.
 
+##Contributors
+
+Matthew Wagerfield: [Follow on Twitter](https://twitter.com/#!/mwagerfield)
+
+Darcy Clarke: [Follow on Twitter](https://twitter.com/#!/darcy_clarke)
+
 ##Display
 
 * display-box
@@ -42,3 +48,7 @@ PLUS! [Robert Penner's](http://robertpenner.com/) easing equations as cubic-bezi
 
 * transition
 * easing
+
+##License
+
+Licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Enjoy ☺
