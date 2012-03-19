@@ -3,7 +3,8 @@
 // LESS CSS3 Mixins
 //
 // @description CSS3 mixins for projects using LESS
-// @version 1.00
+// @see http://lesscss.org/
+// @version 2.00
 //
 // @author Matthew Wagerfield
 // @see http://matthew.wagerfield.com
@@ -57,7 +58,7 @@
 //
 //============================================================
 
-.display-box() {
+.display-box(...) {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-box;
@@ -80,7 +81,7 @@
 //
 //============================================================
 
-.box-orient() {
+.box-orient(...) {
     .display-box();
     -webkit-box-orient: @arguments;
        -moz-box-orient: @arguments;
@@ -105,7 +106,7 @@
 //
 //============================================================
 
-.box-pack() {
+.box-pack(...) {
     .display-box();
     -webkit-box-pack: @arguments;
        -moz-box-pack: @arguments;
@@ -131,7 +132,7 @@
 //
 //============================================================
 
-.box-align() {
+.box-align(...) {
     .display-box();
     -webkit-box-align: @arguments;
        -moz-box-align: @arguments;
@@ -153,7 +154,7 @@
 //
 //============================================================
 
-.box-flex() {
+.box-flex(...) {
     .display-box();
     -webkit-box-flex: @arguments;
        -moz-box-flex: @arguments;
@@ -177,7 +178,7 @@
 //
 //============================================================
 
-.box-sizing() {
+.box-sizing(...) {
     -webkit-box-sizing: @arguments;
        -moz-box-sizing: @arguments;
             box-sizing: @arguments;
@@ -201,7 +202,7 @@
 //
 //============================================================
 
-.user-select() {
+.user-select(...) {
     -webkit-touch-callout: @arguments;
       -webkit-user-select: @arguments;
          -moz-user-select: @arguments;
@@ -225,7 +226,7 @@
 //
 //============================================================
 
-.border-radius() {
+.border-radius(...) {
       -webkit-border-radius: @arguments;
          -moz-border-radius: @arguments;
               border-radius: @arguments;
@@ -252,7 +253,7 @@
 //
 //============================================================
 
-.box-shadow() {
+.box-shadow(...) {
     -webkit-box-shadow: @arguments;
        -moz-box-shadow: @arguments;
             box-shadow: @arguments;
@@ -273,7 +274,7 @@
 //
 //============================================================
 
-.text-shadow() {
+.text-shadow(...) {
     text-shadow: @arguments;
 }
 
@@ -294,7 +295,7 @@
 //
 //============================================================
 
-.linear-gradient() {
+.linear-gradient(...) {
     background-image: -webkit-linear-gradient(@arguments);
     background-image: -moz-linear-gradient(@arguments);
     background-image: -ms-linear-gradient(@arguments);
@@ -320,7 +321,7 @@
 //
 //============================================================
 
-.radial-gradient() {
+.radial-gradient(...) {
     background-image: -webkit-radial-gradient(@arguments);
     background-image: -moz-radial-gradient(@arguments);
     background-image: -ms-radial-gradient(@arguments);
@@ -344,7 +345,7 @@
 //
 //============================================================
 
-.transform() {
+.transform(...) {
     -webkit-transform: @arguments;
        -moz-transform: @arguments;
         -ms-transform: @arguments;
@@ -369,7 +370,7 @@
 //
 //============================================================
 
-.transform-origin() {
+.transform-origin(...) {
     -webkit-transform-origin: @arguments;
        -moz-transform-origin: @arguments;
         -ms-transform-origin: @arguments;
@@ -389,7 +390,7 @@
 //
 //============================================================
 
-.transform-style() {
+.transform-style(...) {
     -webkit-transform-style: @arguments;
        -moz-transform-style: @arguments;
         -ms-transform-style: @arguments;
@@ -409,7 +410,7 @@
 //
 //============================================================
 
-.perspective() {
+.perspective(...) {
     -webkit-perspective: @arguments;
        -moz-perspective: @arguments;
         -ms-perspective: @arguments;
@@ -434,7 +435,7 @@
 //
 //============================================================
 
-.perspective-origin() {
+.perspective-origin(...) {
     -webkit-perspective-origin: @arguments;
        -moz-perspective-origin: @arguments;
         -ms-perspective-origin: @arguments;
@@ -454,7 +455,7 @@
 //
 //============================================================
 
-.backface-visibility() {
+.backface-visibility(...) {
     -webkit-backface-visibility: @arguments;
        -moz-backface-visibility: @arguments;
         -ms-backface-visibility: @arguments;
@@ -479,7 +480,7 @@
 //
 //============================================================
 
-.matrix() {
+.matrix(...) {
     -webkit-transform: matrix(@arguments);
        -moz-transform: matrix(@arguments);
         -ms-transform: matrix(@arguments);
@@ -500,7 +501,7 @@
 //
 //============================================================
 
-.translate() {
+.translate(...) {
     -webkit-transform: translate(@arguments);
        -moz-transform: translate(@arguments);
         -ms-transform: translate(@arguments);
@@ -521,7 +522,7 @@
 //
 //============================================================
 
-.scale() {
+.scale(...) {
     -webkit-transform: scale(@arguments);
        -moz-transform: scale(@arguments);
         -ms-transform: scale(@arguments);
@@ -541,7 +542,7 @@
 //
 //============================================================
 
-.rotate() {
+.rotate(...) {
     -webkit-transform: rotate(@arguments);
        -moz-transform: rotate(@arguments);
         -ms-transform: rotate(@arguments);
@@ -562,7 +563,7 @@
 //
 //============================================================
 
-.skew() {
+.skew(...) {
     -webkit-transform: skew(@arguments);
        -moz-transform: skew(@arguments);
         -ms-transform: skew(@arguments);
@@ -585,7 +586,7 @@
 //
 //============================================================
 
-.transition() {
+.transition(...) {
     -webkit-transition: @arguments;
        -moz-transition: @arguments;
         -ms-transition: @arguments;
