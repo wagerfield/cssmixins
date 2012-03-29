@@ -20,6 +20,7 @@
 // @mixin box-flex
 // @mixin box-sizing
 // @mixin user-select
+// @mixin appearance
 // 
 // Decoration:
 // @mixin border-radius
@@ -171,7 +172,7 @@
 //
 // @param value               :  content-box |
 //                               padding-box |
-//                               border-box  | 
+//                               border-box  |
 //                               inherit
 //
 // @see http://www.w3.org/TR/css3-ui/#box-sizing
@@ -190,12 +191,12 @@
 //
 // user-select
 //
-// @param value               :  none     ||    
-//                               text     ||     
-//                               toggle   ||  
-//                               element  || 
-//                               elements ||
-//                               all      ||     
+// @param value               :  none     |
+//                               text     |
+//                               toggle   |
+//                               element  |
+//                               elements |
+//                               all      |
 //                               inherit
 //
 // @see http://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select
@@ -215,12 +216,47 @@
 
 //============================================================
 //
+// appearance
+//
+// @param value               :  button         |
+//                               push-button    |
+//                               hyperlink      |
+//                               radio-button   |
+//                               checkbox       |
+//                               pop-up-menu    |
+//                               list-menu      |
+//                               radio-group    |
+//                               checkbox-group |
+//                               field          |
+//                               password       |
+//                               normal         |
+//                               inherit        |
+//                               none
+//
+// @see http://www.w3.org/TR/css3-ui/#appearance
+// @see http://www.cssportal.com/css-properties/appearance.htm
+// @see https://developer.mozilla.org/en/CSS/-moz-appearance
+//
+//============================================================
+
+.appearance(...) {
+    -webkit-appearance: @arguments;
+       -moz-appearance: @arguments;
+        -ms-appearance: @arguments;
+         -o-appearance: @arguments;
+            appearance: @arguments;
+}
+
+
+
+//============================================================
+//
 // border-radius
 //
-// @param top-left-radius     :  px, em, %;
-// @param top-right-radius    :  px, em, %;
-// @param bottom-right-radius :  px, em, %;
-// @param bottom-left-radius  :  px, em, %;
+// @param top-left-radius     :  px, em, %
+// @param top-right-radius    :  px, em, %
+// @param bottom-right-radius :  px, em, %
+// @param bottom-left-radius  :  px, em, %
 //
 // @see http://www.w3.org/TR/css3-background/#border-radius
 //
@@ -242,12 +278,12 @@
 //
 // box-shadow
 //
-// @param colour              :  #000, rgba, hsla;
-// @param horizontal-offset   :  px, em;
-// @param vertical-offset     :  px, em;
-// @param blur-radius         :  px, em;
-// @param spread-distance     :  px, em,
-// @param inset               :  inset;
+// @param colour              :  #000, rgba, hsla
+// @param horizontal-offset   :  px, em
+// @param vertical-offset     :  px, em
+// @param blur-radius         :  px, em
+// @param spread-distance     :  px, em
+// @param inset               :  inset
 //
 // @see http://www.w3.org/TR/css3-background/#box-shadow
 //
@@ -265,10 +301,10 @@
 //
 // text-shadow
 //
-// @param colour              :  #000, rgba, hsla;
-// @param horizontal-offset   :  px, em;
-// @param vertical-offset     :  px, em;
-// @param blur-radius         :  px, em;
+// @param colour              :  #000, rgba, hsla
+// @param horizontal-offset   :  px, em
+// @param vertical-offset     :  px, em
+// @param blur-radius         :  px, em
 //
 // @see http://www.w3.org/TR/css3-text/#text-shadow
 //
@@ -284,10 +320,10 @@
 //
 // linear-gradient
 //
-// @param angle               :  top, left, 90deg;
-// @param colourA             :  #000 0%, red 0%;
-// @param colourB             :  #000 50%, red 50%;
-// @param colourC             :  #000 100%, red 100%;
+// @param angle               :  top, left, 90deg
+// @param colourA             :  #000 0%, red 0%
+// @param colourB             :  #000 50%, red 50%
+// @param colourC             :  #000 100%, red 100%
 //
 // @example .linear-gradient(top, ~',crimson 0%', ~',black 100%');
 //
@@ -309,11 +345,11 @@
 //
 // radial-gradient
 //
-// @param location            :  left top, 50% 50%;
-// @param shape               :  circle, ellipse, 100% 75%;
-// @param colourA             :  #000 0%, red 0%;
-// @param colourB             :  #000 50%, red 50%;
-// @param colourC             :  #000 100%, red 100%;
+// @param location            :  left top, 50% 50%
+// @param shape               :  circle, ellipse, 100% 75%
+// @param colourA             :  #000 0%, red 0%
+// @param colourB             :  #000 50%, red 50%
+// @param colourC             :  #000 100%, red 100%
 //
 // @example .radial-gradient(~'50% 50%,', circle, ~',crimson 0%', ~',black 100%');
 //
@@ -359,9 +395,9 @@
 //
 // transform-origin
 //
-// @param value               :  left   | 
-//                               center | 
-//                               right  | 
+// @param value               :  left   |
+//                               center |
+//                               right  |
 //                               px     |
 //                               em     |
 //                               %;
@@ -384,7 +420,7 @@
 //
 // transform-style
 //
-// @param value               :  preserve-3d | flat;
+// @param value               :  preserve-3d | flat
 //
 // @see http://www.w3.org/TR/css3-3d-transforms/#transform-style-property
 //
@@ -404,7 +440,7 @@
 //
 // perspective
 //
-// @param value               :  none | 0, 1, 100, 1000, etc;
+// @param value               :  none | 0, 1, 100, 1000, etc
 //
 // @see http://www.w3.org/TR/css3-3d-transforms/#perspective-property
 //
@@ -424,12 +460,12 @@
 //
 // perspective-origin
 //
-// @param value               :  left   | 
-//                               center | 
-//                               right  | 
+// @param value               :  left   |
+//                               center |
+//                               right  |
 //                               px     |
 //                               em     |
-//                               %;
+//                               %
 //
 // @see http://www.w3.org/TR/css3-3d-transforms/#perspective-origin-property
 //
@@ -449,7 +485,7 @@
 //
 // backface-visibility
 //
-// @param value               :  visible | hidden;
+// @param value               :  visible | hidden
 //
 // @see http://www.w3.org/TR/css3-3d-transforms/#backface-visibility-property
 //
@@ -469,12 +505,12 @@
 //
 // matrix
 //
-// @param a                   :  Number;
-// @param b                   :  Number;
-// @param c                   :  Number;
-// @param d                   :  Number;
-// @param e                   :  Number;
-// @param f                   :  Number;
+// @param a                   :  Number
+// @param b                   :  Number
+// @param c                   :  Number
+// @param d                   :  Number
+// @param e                   :  Number
+// @param f                   :  Number
 //
 // http://www.w3.org/TR/css3-3d-transforms/#transform-functions
 //
@@ -494,8 +530,8 @@
 //
 // translate
 //
-// @param translate-x         :  px;
-// @param translate-y         :  px;
+// @param translate-x         :  px
+// @param translate-y         :  px
 //
 // http://www.w3.org/TR/css3-3d-transforms/#transform-functions
 //
@@ -515,8 +551,8 @@
 //
 // scale
 //
-// @param scale-x             :  0.5, 2, etc;
-// @param scale-y             :  0.5, 2, etc;
+// @param scale-x             :  0.5, 2, etc
+// @param scale-y             :  0.5, 2, etc
 //
 // http://www.w3.org/TR/css3-3d-transforms/#transform-functions
 //
@@ -536,7 +572,7 @@
 //
 // rotate
 //
-// @param angle               :  0deg;
+// @param angle               :  0deg
 //
 // http://www.w3.org/TR/css3-3d-transforms/#transform-functions
 //
@@ -556,8 +592,8 @@
 //
 // skew
 //
-// @param axis-x              :  0deg;
-// @param axis-y              :  0deg;
+// @param axis-x              :  0deg
+// @param axis-y              :  0deg
 //
 // http://www.w3.org/TR/css3-3d-transforms/#transform-functions
 //
@@ -577,10 +613,10 @@
 //
 // transition
 //
-// @param properties          :  all, left, opacity, etc;
-// @param duration            :  1s, 1000ms;
-// @param delay               :  1s, 1000ms;
-// @param easing              :  linear, ease-in-out, etc;
+// @param properties          :  all, left, opacity, etc
+// @param duration            :  1s, 1000ms
+// @param delay               :  1s, 1000ms
+// @param easing              :  linear, ease-in-out, etc
 //
 // @see http://www.w3.org/TR/css3-transitions/
 //

@@ -49,4 +49,4 @@ Licensed under [MIT](http://www.opensource.org/licenses/mit-license.php). Enjoy.
 
 ##Contributors
 
-Matthew Wagerfield: [Follow on Twitter](https://twitter.com/#!/mwagerfield)
+Matthew Wagerfield: [@mwagerfield](https://twitter.com/#!/mwagerfield)
