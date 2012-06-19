@@ -138,7 +138,6 @@ $defaultOperaSupport: true;
 //============================================================
 
 @mixin box-orient($arguments) {
-  @include display-box;
   @include prefix-property(box-orient, unquote($arguments));
 }
 
@@ -159,7 +158,6 @@ $defaultOperaSupport: true;
 //============================================================
 
 @mixin box-pack($arguments) {
-  @include display-box;
   @include prefix-property(box-pack, unquote($arguments));
 }
 
@@ -181,7 +179,6 @@ $defaultOperaSupport: true;
 //============================================================
 
 @mixin box-align($arguments) {
-  @include display-box;
   @include prefix-property(box-align, unquote($arguments));
 }
 
@@ -199,7 +196,6 @@ $defaultOperaSupport: true;
 //============================================================
 
 @mixin box-flex($arguments) {
-  @include display-box;
   @include prefix-property(box-flex, unquote($arguments));
 }
 
@@ -241,7 +237,7 @@ $defaultOperaSupport: true;
 //============================================================
 
 @mixin user-select($arguments) {
-  @include prefix-property(box-sizing, unquote($arguments));
+  @include prefix-property(user-select, unquote($arguments));
   @include prefix-property(touch-callout, unquote($arguments), true, false, false, false);
 }
 
@@ -347,7 +343,7 @@ $defaultOperaSupport: true;
 // @param colorB              :  #000 50%, red 50%
 // @param colorC              :  #000 100%, red 100%
 //
-// @example +linear-gradient("top, crimson 0%, black 100%")
+// @example @include linear-gradient("top, crimson 0%, black 100%");
 //
 // @see http://dev.w3.org/csswg/css3-images/#linear-gradients
 //
@@ -373,7 +369,7 @@ $defaultOperaSupport: true;
 // @param colorB              :  #000 50%, red 50%
 // @param colorC              :  #000 100%, red 100%
 //
-// @example +radial-gradient("50% 50%, circle, crimson 0%, black 100%")
+// @example @include radial-gradient("50% 50%, circle, crimson 0%, black 100%");
 //
 // @see http://dev.w3.org/csswg/css3-images/#radial-gradients
 //

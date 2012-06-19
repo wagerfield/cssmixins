@@ -1,6 +1,8 @@
 @import "../scss/css3";
 
 div {
+    @include display-box();
+
     @include box-orient(vertical);
 
     @include box-pack(center);

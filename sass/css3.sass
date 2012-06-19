@@ -139,7 +139,6 @@ $defaultOperaSupport: true
 //============================================================
 
 =box-orient($arguments)
-  +display-box
   +prefix-property(box-orient, unquote($arguments))
 
 
@@ -159,7 +158,6 @@ $defaultOperaSupport: true
 //============================================================
 
 =box-pack($arguments)
-  +display-box
   +prefix-property(box-pack, unquote($arguments))
 
 
@@ -180,7 +178,6 @@ $defaultOperaSupport: true
 //============================================================
 
 =box-align($arguments)
-  +display-box
   +prefix-property(box-align, unquote($arguments))
 
 
@@ -197,7 +194,6 @@ $defaultOperaSupport: true
 //============================================================
 
 =box-flex($arguments)
-  +display-box
   +prefix-property(box-flex, unquote($arguments))
 
 
@@ -237,7 +233,7 @@ $defaultOperaSupport: true
 //============================================================
 
 =user-select($arguments)
-  +prefix-property(box-sizing, unquote($arguments))
+  +prefix-property(user-select, unquote($arguments))
   +prefix-property(touch-callout, unquote($arguments), true, false, false, false)
 
 
