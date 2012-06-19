@@ -1,0 +1,59 @@
+@import "../scss/css3";
+
+div {
+    @include box-orient(vertical);
+
+    @include box-pack(center);
+
+    @include box-align(center);
+
+    @include box-flex(2);
+
+    @include box-sizing(border-box);
+
+    @include user-select(all);
+
+    @include appearance(button);
+
+    @include border-radius(10%);
+    @include border-radius(10% 20%);
+    @include border-radius(2px 4px 6px 8px);
+
+    @include box-shadow(black 0px 2px 4px);
+    @include box-shadow(black 0px 2px 4px 8px);
+    @include box-shadow(black 0px 2px 4px 8px inset);
+
+    @include text-shadow(rgba(132, 188, 222, 0.5) 0px 2px 4px);
+    @include text-shadow(black 0px 2px 4px 8px);
+    @include text-shadow(black 0px 2px 4px 8px inset);
+
+    @include linear-gradient("top, crimson 0%, black 100%");
+
+    @include radial-gradient("50% 50%, circle, crimson 0%, black 100%");
+
+    @include transform("matrix(1, 0, 0, 1, 0, 0)");
+
+    @include transform-origin(50% 50%);
+
+    @include transform-style(flat);
+
+    @include perspective(1000px);
+
+    @include perspective-origin(50% 0%);
+
+    @include backface-visibility(visible);
+
+    @include matrix("0, 1, 2, 3, 4, 5");
+
+    @include translate("0, 100%");
+
+    @include scale("0.5, 2");
+
+    @include rotate(45deg);
+
+    @include skew("45deg, 45deg");
+
+    @include transition(all 1s $easeInOutExpo 500ms);
+
+    @include animation(walk 1s $easeInOutExpo 500ms infinite reverse forwards);
+}
