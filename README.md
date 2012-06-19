@@ -1,8 +1,8 @@
-#CSS3 Mixins
+#CSS Mixins
 
-Comprehensive collection of flexible mixins for LESS, SCSS & SASS that allow you use CSS3 features without having to worry about vendor prefixes. Awesome.
+Comprehensive collection of flexible mixins for [STYL][styl], [SCSS][sass], [SASS][sass] & [LESS][less] that empower you use CSS3 features without having to worry about vendor prefixes.
 
-All mixins come with sweet documentation including available values & units, W3 references and even examples. All you have to do is play with them.
+Each mixin comes with thorough documentation including available values & units, W3 references and even examples. All you have to do is play with them.
 
 PLUS! [Robert Penner's][robertpenner] easing equations as cubic-bezier functions, all thanks to the work of [Matthew Lein][matthewlein]. Now you have no excuse not to spice up your CSS3 transitions.
 
@@ -57,3 +57,6 @@ Matthew Wagerfield: [@mwagerfield][twitter]
 [twitter]: https://twitter.com/mwagerfield
 [robertpenner]: http://robertpenner.com/
 [matthewlein]: http://matthewlein.com/ceaser/
+[styl]: http://learnboost.github.com/stylus/
+[sass]: http://sass-lang.com/
+[less]: http://lesscss.org/
