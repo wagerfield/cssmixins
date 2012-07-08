@@ -45,13 +45,13 @@ PLUS! [Robert Penner's][robertpenner] easing equations as cubic-bezier functions
 * animation
 * easing
 
-##License
-
-Licensed under [MIT][mit]. Enjoy.
-
 ##Author
 
 Matthew Wagerfield: [@mwagerfield][twitter]
+
+##License
+
+Licensed under [MIT][mit]. Enjoy.
 
 [mit]: http://www.opensource.org/licenses/mit-license.php
 [twitter]: https://twitter.com/mwagerfield
