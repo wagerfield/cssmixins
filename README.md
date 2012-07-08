@@ -1,6 +1,6 @@
 #CSS Mixins
 
-Comprehensive collection of flexible mixins for [STYL][styl], [SCSS][sass], [SASS][sass] & [LESS][less] that empower you use CSS3 features without having to worry about vendor prefixes.
+Comprehensive collection of flexible mixins for [STYL][styl], [SCSS][sass], [SASS][sass] & [LESS][less] that allow you to use CSS3 features without having to worry about vendor prefixes.
 
 Each mixin comes with thorough documentation including available values & units, W3 references and even examples. All you have to do is play with them.
 
